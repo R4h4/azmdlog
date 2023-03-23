@@ -8,7 +8,7 @@ setup(
     description="Azure Monitor Custom Logger for Databricks",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/r4h4/cldx",
+    url="https://github.com/r4h4/azmdlog",
     packages=find_packages(),
     package_dir={"azmdlog": "azmdlog"},
     classifiers=[
