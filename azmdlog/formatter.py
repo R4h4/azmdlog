@@ -33,7 +33,7 @@ class AzureMonitorFormatter(logging.Formatter):
             "ClusterId": self.dbutils.notebook.entry_point.getDbutils().notebook().getContext().tags().apply('clusterId'),
             "SessionId": self.dbutils.notebook.entry_point.getDbutils().notebook().getContext().tags().apply('sessionId'),
             "User": self.dbutils.notebook.entry_point.getDbutils().notebook().getContext().tags().apply('user'),
-            "formatted_message": formatted_message
+            "formattedMessage": formatted_message
         }
         if record.args:
             log_data.update(record.args)
